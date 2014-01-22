@@ -5,22 +5,22 @@ library:
    chapters:
     - name: "Part 1: PHP Basics"
       path: 01-php-basics/
-      sub-chapters:
+      chapters:
         - name: Intro to PHP
-          path: 01/
-          sections:
+          path: 01-php-basics/01/
+          chapters:
             - name: Static and dynamic sites
-              path: 01-static-vs-dynamic-sites.html
+              path: 01-php-basics/01/01-static-vs-dynamic-sites.html
             - name: How do websites work?
-              path: 02-how-websites-work.html
+              path: 01-php-basics/01/02-how-websites-work.html
             - name: Web languages
-              path: 03-web-languages.html
+              path: 01-php-basics/01/03-web-languages.html
             - name: And the competition?
-              path: 04-and-the-competition.html
+              path: 01-php-basics/01/04-and-the-competition.html
             - name: Conclusion
-              path: 05-php-intro-conclusion.html
+              path: 01-php-basics/01/05-php-intro-conclusion.html
         - name: Prepare your machine
-          path: 02/
+          path: 01-php-basics/02/
         - name: First steps with PHP
         - name: Include parts of a page
         - name: Variables
@@ -31,7 +31,7 @@ library:
         
     - name: "Part 2: Transferring Data"
       path: 02-transfer-data/
-      sub-chapters:
+      chapters:
         - name: Transfer data via the url
         - name: Transfer data via forms
         - name: "Project: password-protected page"
@@ -40,7 +40,7 @@ library:
 
     - name: "Part 3: Storing Information"
       path: 03-store-info/
-      sub-chapters:
+      chapters:
         - name: Introduction to databases
         - name: phpMyAdmin
         - name: Read data
@@ -53,7 +53,7 @@ library:
 
     - name: "Part 4: Advanced PHP"
       path: 04-advanced-php/
-      sub-chapters:
+      chapters:
         - name: Generate images in PHP
         - name: Regular expressions
         - name: Object-oriented programming
