@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div class="article">
+    
+    <h1>{{ page.title }}</h1>
+    
+    <div class="entry">
+        {% if page.badge %}
+            <span class="meta badge">{{ page.badge }}</span>
+        {% endif %}
+        
+        {{ content }}
+    </div>
+
+    <script>
+        document.write('<a class="backlink" href="' + document.referrer + '">&larr; Go Back</a>');
+    </script>
+</div> 

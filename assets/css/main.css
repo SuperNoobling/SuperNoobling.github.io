@@ -1,0 +1,340 @@
+/* ==========================================================================
+    Default element styles
+   ========================================================================== */
+body {
+    background-color: #fff;
+    font: 100% 'Alegreya', serif;
+    line-height: 1.4em;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6, .sitename {
+    font-family: 'Alegreya SC', serif;
+    font-weight: normal;
+    line-height: 1;
+    margin: 1.5em 0 0.5em;
+    text-transform: capitalize;
+}
+h1 {
+    text-align: center;
+    margin: 2em 0 1em;
+}
+.home h1 {
+    margin-bottom: 0.5em;
+}
+h2 {
+    font-weight: normal;
+}
+
+p {
+    margin: 0.3em 0;
+    position: relative;
+}
+.article p:before {
+    color: #ddd;
+    content: '\00B6'; /* pilcrows */
+    display: inline-block;
+    margin-right: 0.5em;
+}
+.article .no-pilcrow:before,
+.article .intro:before,
+.article .meta:before,
+.article .meta + p:before,
+.entry > p:first-child:before,
+.article hr + p:before,
+.article h1 + p:before,
+.article h2 + p:before,
+.article h3 + p:before,
+.article h4 + p:before,
+.article h1 + [class*='figure-'] + p:before,
+.article h2 + [class*='figure-'] + p:before,
+.article h3 + [class*='figure-'] + p:before,
+.article h4 + [class*='figure-'] + p:before {
+    display: none;
+}
+ul,
+ol {
+    margin: 0.3em 0 0 0;
+    padding: 0;
+}
+
+a,
+.backlink:visited,
+.sitename a:visited,
+.footer a:visited {
+    color: #2B8DAF;
+    text-decoration: none;
+}
+a:visited {
+    color: #777;
+}
+a:hover,
+a:focus,
+a:active {
+    color: #DF6161;
+    text-decoration: underline;
+}
+
+table {
+    font-size: inherit;
+    font: 100%;
+}
+
+hr {
+    background: #ddd;
+    border: 0 none;
+    height: 1px;
+    margin: 1em 0;
+}
+
+
+/* ==========================================================================
+    Helpers & Objects
+   ========================================================================== */
+/*
+* Clearfix
+*/
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
+
+/*
+ * Image replacement
+ */
+.ir {
+    border: 0; 
+    color: transparent;
+    font: 0/0 a; 
+    text-shadow: none; 
+}
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+.invisible {
+    visibility: hidden;
+}
+
+/*
+* Horizontal list
+*/
+.hlist {
+    list-style: none;
+    margin-left: 0;
+    overflow: hidden;
+    *overflow: visible;
+    *zoom:1;
+}
+.hlist > li {
+    display: inline-block;
+    *display: inline;
+}
+
+/*
+* Breadcrumb (use with .hlist)
+*/
+.breadcrumb > li + li:before {
+    content: "\00BB" "\00A0";
+    display: inline-block;
+    *display: inline;
+    padding: 0 6px 0 10px;
+}
+
+
+/* ==========================================================================
+    Layout & global components
+   ========================================================================== */
+.global {
+    font-size: 115%;
+    margin: 0 auto 2em;
+    text-align: justify;
+    width: 28em;
+}
+
+/*
+ * Header
+ */
+.header {
+    margin: 0 0 2em;
+}
+.sitename,
+.bookname {
+    float: left;
+    font-size: 80%;
+}
+.sitename {
+    margin: 0;
+    width: 30%;
+}
+.deco {
+    display: inline-block;
+    font-size: 40px;
+    line-height: 1;
+    margin-left: -25px;
+}
+.bookname {
+    margin-top: 18px;
+    text-align: right;
+    width: 70%;
+}
+
+/*
+ * Footer
+ */
+.footer {
+    font-size: 80%;
+    color: #666;
+    margin-top: 5em;
+    overflow: hidden;
+}
+
+/*
+ * Banner
+ */
+.banner {
+    margin: 0 auto;
+    max-width: 100%;
+    width: auto;
+}
+
+/*
+ * Common
+ */
+.article, .entry {
+    position: relative;
+}
+.meta {
+    color: #aaa;
+    font-size: 80%;
+}
+.intro {
+    font-style: italic;
+    font-size: 1.1em;
+    margin: 2em 0;
+}
+.figure-left {
+    float: left;
+    margin: 0 1em 0 -3em;
+}
+.figure-right {
+    float: right;
+    margin: 0 -3em 0 1em;
+}
+.figure-center {
+    display: block;
+    margin: 1em auto;
+    width: auto;
+}
+.backlink {
+    display: block;
+    margin-top: 4em;
+}
+
+/* ==========================================================================
+    Modules
+   ========================================================================== */
+  
+ /*
+  * Post list
+  */
+.posts {
+    list-style-type: none;
+    margin: 0 0 2em;
+    padding: 0;
+}
+.posts ul,
+.posts ol {
+    margin-left: 3em;
+}
+.posts ol {
+    list-style: upper-roman;
+}
+.posts ol ol {
+    list-style: lower-roman;
+}
+.posts li {
+    line-height: 1.75em;
+}
+.posts li li {
+    font-size: 85%;
+}
+.posts li li li {
+    font-size: 100%;
+}
+.posts span {
+    color: #aaa;
+    font-size: 80%;
+}
+/* ===== Post list on book pages ===== */
+
+.posts-title {
+    margin-bottom: 0;
+}
+.article .posts {
+    border: solid #eee;
+    border-width: 1px 0;
+    margin: 0.5em 0;
+    padding: 1em 0;
+}
+
+/*
+ * Articles & books
+ */
+.entry .meta {
+    left: 110%;
+    line-height: 1;
+    margin: 0;
+    min-width: 10em;
+    position: absolute;
+    text-align: left;
+    top: 0.35em;
+}
+
+.entry pre {
+    padding: 0.5em;
+}
+.entry code, .entry kbd, .entry pre, .entry samp {
+    font-family: 'Source Code Pro', Menlo, 'Andale Mono', monospace, serif
+}
+.entry code {
+    font-size: 80%;
+    padding: 0 .2em;
+}
+.entry pre code {
+    border: none;
+}
+.entry pre.terminal {
+    border: 1px solid #000;
+    background-color: #333;
+    color: #FFF;
+}
+.entry pre.terminal code {
+    background-color: #333;
+}

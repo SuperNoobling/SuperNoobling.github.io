@@ -1,0 +1,37 @@
+---
+layout: default
+title: SuperNoobling
+---
+
+<div class="home">
+    
+    <img class="figure-center banner" src="http://openclipart.org/image/400px/svg_to_png/83/molumen_ussr_calculator.png" alt="" />
+    
+    <h2>Books</h2>
+    <ul class="posts">
+    {% assign sorted_pages = site.pages | sort:"path" %}
+    {% for node in sorted_pages %}
+        {% if node.type == 'book' %}
+          <li>
+              
+              {{% if node.badge %}}
+              <small class="meta">{{ node.badge }}</small>
+              {{% endif %}}
+              <a href="{{node.url}}">{{node.title}}</a>
+          </li>
+      {% endif %}
+    {% endfor %}
+    </ul>
+    
+    {% if site.categories.news %}
+    <h2>News</h2>
+    <ul class="posts">
+        {% for post in site.categories.news %}
+        <li>
+            <small class="meta">{{ post.date | date_to_string }}</small>&nbsp;&nbsp;&nbsp;<a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+</div>

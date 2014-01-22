@@ -1,0 +1,65 @@
+library:
+  
+ - title: Build dynamic websites with PHP & MySQL
+   path: php-and-mysql/
+   chapters:
+    - name: "Part 1: PHP Basics"
+      path: 01-php-basics/
+      sub-chapters:
+        - name: Intro to PHP
+          path: 01/
+          sections:
+            - name: Static and dynamic sites
+              path: 01-static-vs-dynamic-sites.html
+            - name: How do websites work?
+              path: 02-how-websites-work.html
+            - name: Web languages
+              path: 03-web-languages.html
+            - name: And the competition?
+              path: 04-and-the-competition.html
+            - name: Conclusion
+              path: 05-php-intro-conclusion.html
+        - name: Prepare your machine
+          path: 02/
+        - name: First steps with PHP
+        - name: Include parts of a page
+        - name: Variables
+        - name: Conditions
+        - name: Loops
+        - name: Functions
+        - name: Tables
+        
+    - name: "Part 2: Transferring Data"
+      path: 02-transfer-data/
+      sub-chapters:
+        - name: Transfer data via the url
+        - name: Transfer data via forms
+        - name: "Project: password-protected page"
+        - name: Super-global variables, sessions and cookies
+        - name: Read and write to a file
+
+    - name: "Part 3: Storing Information"
+      path: 03-store-info/
+      sub-chapters:
+        - name: Introduction to databases
+        - name: phpMyAdmin
+        - name: Read data
+        - name: Write data
+        - name: "Project: mini chat"
+        - name: SQL functions
+        - name: Dates in SQL
+        - name: "Project: blog with comments"
+        - name: Joining tables
+
+    - name: "Part 4: Advanced PHP"
+      path: 04-advanced-php/
+      sub-chapters:
+        - name: Generate images in PHP
+        - name: Regular expressions
+        - name: Object-oriented programming
+    
+    
+ - title: Learn to make websites with HTML5 & CSS3
+        
+        
+ - title: Liven up your websites with JavaScript
