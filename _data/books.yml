@@ -1,26 +1,29 @@
 library:
   
  - title: Build dynamic websites with PHP & MySQL
-   path: php-and-mysql/
+   path: /books/php-and-mysql
    chapters:
     - name: "Part 1: PHP Basics"
-      path: 01-php-basics/
-      sub-chapters:
+      path: /01-php-basics
+      chapters:
         - name: Intro to PHP
-          path: 01/
-          sections:
+          path: /01
+          chapters:
             - name: Static and dynamic sites
-              path: 01-static-vs-dynamic-sites.html
+              path: /01-static-vs-dynamic-sites.html
             - name: How do websites work?
-              path: 02-how-websites-work.html
+              path: /02-how-websites-work.html
             - name: Web languages
-              path: 03-web-languages.html
+              path: /03-web-languages.html
             - name: And the competition?
-              path: 04-and-the-competition.html
+              path: /04-and-the-competition.html
             - name: Conclusion
-              path: 05-php-intro-conclusion.html
+              path: /05-php-intro-conclusion.html
         - name: Prepare your machine
-          path: 02/
+          path: /02
+          chapters:
+            - name: What programs do I need?
+              path: /01-required-software.html
         - name: First steps with PHP
         - name: Include parts of a page
         - name: Variables
@@ -30,8 +33,8 @@ library:
         - name: Tables
         
     - name: "Part 2: Transferring Data"
-      path: 02-transfer-data/
-      sub-chapters:
+      path: /02-transfer-data
+      chapters:
         - name: Transfer data via the url
         - name: Transfer data via forms
         - name: "Project: password-protected page"
@@ -39,8 +42,8 @@ library:
         - name: Read and write to a file
 
     - name: "Part 3: Storing Information"
-      path: 03-store-info/
-      sub-chapters:
+      path: /03-store-info
+      chapters:
         - name: Introduction to databases
         - name: phpMyAdmin
         - name: Read data
@@ -52,8 +55,8 @@ library:
         - name: Joining tables
 
     - name: "Part 4: Advanced PHP"
-      path: 04-advanced-php/
-      sub-chapters:
+      path: /04-advanced-php
+      chapters:
         - name: Generate images in PHP
         - name: Regular expressions
         - name: Object-oriented programming

@@ -15,85 +15,40 @@ layout: default
     </div>
     
     {% if page.type == "book" %}
-    
         <h2>Table of Contents</h2>
+        <div class="posts">
         {% for book in site.data.books.library %}
             {% if book.title == page.title %}
-            <ol class="posts">
-                {% for chapter in book.chapters %}
-                <li>
-                    {% if chapter.path %}
-                        <a href="{{ chapter.path }}">{{ chapter.name }}</a>
-                    {% else %}
-                        {{ chapter.name }}
-                    {% endif %}
-                    {% if chapter.sub-chapters %}
-                    <ol>
-                        {% for subchapter in chapter.sub-chapters %}
-                        <li>
-                            {% if subchapter.path %}
-                                <a href="{{ chapter.path }}{{ subchapter.path }}">{{ subchapter.name }}</a>
-                            {% else %}
-                                {{ subchapter.name }}
-                            {% endif %}
-                            {% if subchapter.sections %}
-                            <ol>
-                                {% for section in subchapter.sections %}
-                                <li>
-                                    {% if section.path %}
-                                        <a href="{{ chapter.path }}{{ subchapter.path }}{{ section.path }}">{{ section.name }}</a>
-                                    {% else %}
-                                        {{ section.name }}
-                                    {% endif %}
-                                </li>
-                                {% endfor %}
-                            </ol>
-                            {% endif %}
-                        </li>
-                        {% endfor %}
-                    </ol>
-                    {% endif %}
-                </li>
-                {% endfor %}
-            </ol>
+            
+                {% assign parent_path = book.path %}
+                {% assign tree = book.chapters %}
+                {% include tree.html %}
+            
             {% endif %}
         {% endfor %}
-        
-    {% else if page.type == "chapter" %}
+        </div>
+    {% endif %}
+    
+    {% if page.type == "chapter" %}
     
         {% for book in site.data.books.library %}
             {% for chapter in book.chapters %}
                 {% if book.title == page.book and chapter.name == page.title %}
                     <h2>In this section</h2>
-                    <ol class="posts">
-                        {% for subchapter in chapter.sub-chapters %}
-                        <li>
-                            {% if subchapter.path %}
-                                <a href="{{ subchapter.path }}">{{ subchapter.name }}</a>
-                            {% else %}
-                                {{ subchapter.name }}
-                            {% endif %}
-                            {% if subchapter.sections %}
-                            <ol>
-                                {% for section in subchapter.sections %}
-                                <li>
-                                    {% if section.path %}
-                                        <a href="{{ subchapter.path }}{{ section.path }}">{{ section.name }}</a>
-                                    {% else %}
-                                        {{ section.name }}
-                                    {% endif %}
-                                </li>
-                                {% endfor %}
-                            </ol>
-                            {% endif %}
-                        </li>
-                        {% endfor %}
-                    </ol>
+                    <div class="posts">
+                        
+                        {% capture parent_path %}{{ book.path }}{{ chapter.path }}{% endcapture %}
+                        
+                        {% assign tree = chapter.chapters %}
+                        {% include tree.html %}
+                        
+                    </div>
                 {% endif %}
             {% endfor %}
         {% endfor %}
     {% endif %}
-
+    
+    
     <script>
         document.write('<a class="backlink" href="' + document.referrer + '">&larr; Go Back</a>');
     </script>

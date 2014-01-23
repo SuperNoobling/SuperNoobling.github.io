@@ -9,7 +9,7 @@ When you create a web site, you'll need to deal with not one, but multiple langu
 
 Certain programs, called WYSIWYG (What You See Is What You Get), can help beginners create static web sites without knowing the programming languages that hide underneath… But to build a dynamic site, as we want to, we deﬁnitely need to get our hands dirty.
 
-## HTML and CSS for static sites
+## HTML & CSS for static sites
 Many languages have been create for building web sites. Two of these form the basis that all website administrators need to know.
 
 ### HTML

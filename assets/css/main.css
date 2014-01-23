@@ -294,19 +294,16 @@ hr {
  /*
   * Post list
   */
-.posts {
+.posts > ol {
     list-style-type: none;
     margin: 0 0 2em;
     padding: 0;
 }
-.posts ul,
-.posts ol {
+.posts > ol ol {
     margin-left: 3em;
-}
-.posts ol {
     list-style: upper-roman;
 }
-.posts ol ol {
+.posts > ol ol ol {
     list-style: lower-roman;
 }
 .posts li {

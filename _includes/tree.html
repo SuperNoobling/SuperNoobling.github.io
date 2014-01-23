@@ -1,0 +1,19 @@
+<ol>
+  {% for item in tree %}
+    <li>
+        {% if item.path %}
+            <a href="{{ parent_path }}{{ item.path }}">{{ item.name }}</a>
+        {% else %}
+            {{ item.name }}
+        {% endif %}
+        
+        {% if item.chapters %}
+            {% assign save_path = parent_path %}
+                {% capture parent_path %}{{ parent_path }}{{ item.path }}{% endcapture %}
+                {% assign tree = item.chapters %}
+                {% include tree.html %}
+            {% assign parent_path = save_path %}
+        {% endif %}
+    </li>
+  {% endfor %}
+</ol>
