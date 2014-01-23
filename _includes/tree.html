@@ -2,11 +2,12 @@
   {% for item in tree %}
     <li>
         {% if item.path %}
-            <a href="{{ item.path }}">{{ item.name }}</a>
+            <a href="{{ parent_path }}{{ item.path }}">{{ item.name }}</a>
         {% else %}
             {{ item.name }}
         {% endif %}
         {% if item.chapters %}
+            {% capture parent_path %}{{ parent_path }}{{ item.path }}{% endcapture %}
             {% assign tree = item.chapters %}
             {% include tree.html %}
         {% endif %}

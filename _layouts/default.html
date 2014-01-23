@@ -36,7 +36,7 @@
                 {% if page.book %}
                     {% for book in site.data.books.library %}
                         {% if page.book == book.title %}
-                            <div class="bookname"><a href="{{ site.baseurl }}/books/{{ book.path }}">{{ page.book }}</a></div>
+                            <div class="bookname"><a href="{{ book.path }}">{{ page.book }}</a></div>
                         {% endif %}
                     {% endfor %}
                 {% endif %}
