@@ -1,6 +1,6 @@
 ---
 layout: book
-title: Liven up your websites with JavaScript
+title: Jazz up your websites with JavaScript
 type: book
 badge: Coming soon
 ---

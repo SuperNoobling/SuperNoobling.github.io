@@ -60,6 +60,54 @@ library:
     
     
  - title: Learn to make websites with HTML5 & CSS3
+   path: html5-and-css3
+   chapters:
+     - name: "Part 1: HTML Basics"
+       path: 01-html-basics/
+       sub-chapters:
+         - name: How do you make a website?
+           path: 01/
+           sections: 
+             - name: How websites work
+               path: 01-how-websites-work.html
+             - name: "HTML & CSS: two languages for making websites"
+               path: 02-html-and-css.html
+             - name: Text editors
+               path: 03-text-editors.html
+         - name: Your first web page in HTML
+           path: 02/
+         - name: Organising text
+           path: 03/
+         - name: Creating links
+           path: 04/
+         - name: Inserting images
+           path: 05/
+     - name: "Part 2: The joys of styling with CSS"
+       sub-chapters:
+         - name: Setting up CSS
+         - name: Styling text
+         - name: Colours & backgrounds
+         - name: Borders & shadows
+         - name: State-based styles
+     - name: "Part 3: Laying out the site"
+       sub-chapters:
+         - name: Structuring your web page
+         - name: The box model
+         - name: CSS positioning
+         - name: "Project: making a website step-by-step"
+     - name: "Part 4: Some slightly harder stuff"
+       sub-chapters:
+         - name: Tables
+         - name: Forms
+         - name: Video and audio
+         - name: Responsive design with Media Queries
+         - name: Going further
+     - name: "Bonus stuff"
+       sub-chapters:
+         - name: Uploading your site to the web
+         - name: HTML Cheatsheet
+         - name: CSS Cheatsheet
+         - name: Cross-browser compatibility
         
         
- - title: Liven up your websites with JavaScript
+ - title: Jazz up your websites with JavaScript

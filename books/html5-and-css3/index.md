@@ -2,25 +2,23 @@
 layout: book
 title: Learn to make websites with HTML5 & CSS3
 type: book
-badge: Coming soon
+badge: In progress
 ---
 
 <p class="intro">This book is a translation of a popular introductory course by <a href="http://www.siteduzero.com/membres/mateo21">Mathieu Nebra</a> of Site du Zéro, which is made freely available under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/fr/deed.en">Creative Commons license</a>.</p>
 
 --
 
-Vous rêvez d'apprendre à créer des sites web ?
-(mais vous avez peur que ce soit compliqué car vous débutez ?)
-Image utilisateur
+Do you dream of making web sites, but are a little bit worried because you're a beginner?
 
-Vous êtes au bon endroit ! Ce cours est destiné aux débutants qui ne connaissent rien à la création de sites web et qui n'attendent qu'une chose : qu'on leur explique pas à pas comment tout cela fonctionne avec des mots simples et des exemples concrets !
+If so then you've come to the right place! This book was written beginners with absolutely no knowledge of web development, and who want step-by-step explanations of how everything works, in everyday language, with real examples.
 
-Nous découvrirons dans ce cours les célèbres langages HTML5 et CSS3 que l'on utilise aujourd'hui pour concevoir des sites web. Même si ces "langages" ne signifient pas encore grand chose pour vous, rassurez-vous : tout ce que vous avez besoin de savoir sera expliqué dans ce cours ! Vous découvrirez notamment comment :
+In this book you'll discover the famous HTML and CSS languages that are used to build web sites. Event if these "languages" don't mean anything for you yet, don't worry: everything you need to know will be explained in this book! You'll learn how to:
 
-- Insérer du texte, des images et des vidéos
-- Faire des liens entre vos pages
-- Mettre en forme en modifiant la couleur, la taille, le fond, la police...
-- Positionner les éléments du site comme bon vous semble : en-tête, menus...
-- ... et bien plus encore ! :)
+- insert text, images, and videos
+- create links between pages
+- style pages by modifying colours, sizes, backgrounds, fonts...
+- position elements however you like: header, menus...
+- and much more!
 
-Vous n'avez qu'une chose à faire : lisez les chapitres dans l'ordre et découvrez le monde fascinant de la création de sites web avec HTML5 et CSS3 !
+So, read the chapters in order and discover the fascinating world of making websites with HTML5 and CSS3!

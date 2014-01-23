@@ -75,6 +75,36 @@ a:active {
     text-decoration: underline;
 }
 
+blockquote {
+    margin: 0 1em;
+    padding: 2em;
+    position: relative;
+}
+blockquote:before,
+blockquote:after {
+    font-size: 5em;
+    line-height: 1;
+    position: absolute;
+}
+blockquote:before {
+    content: "\201C";
+    left: 0;
+    top: 10px;
+}
+blockquote:after {
+    content: "\201D";
+    right: 0;
+    bottom: -20px;
+}
+blockquote p {
+    font-size: 1.2em;
+    font-style: italic;
+    line-height: 1.2em;
+}
+.article blockquote > p:before {
+    display: none;
+}
+
 table {
     font-size: inherit;
     font: 100%;
