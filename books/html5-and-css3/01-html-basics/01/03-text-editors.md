@@ -18,60 +18,32 @@ But there are many programs out there that are far more powerful, and no one rea
 ## WYSIWYG (What You See Is What You Get)
 These programs are easy to use, and allow people to make websites without learning any specific language. The most well-known one is Adobe Dreamweaver, and more recently Adobe Muse. You can even make websites in Word and OpenOffice! The main problem with these programs is the bad quality HTML and CSS that is generated. A good web developer will need to learn HTML and CSS anyway, that's why I recommend avoiding these tools.
 
-### Text editors
+## Text editors
 These are specialised programes for writing code. Usually you can use them for multiple languages, not just HTML and CSS. They're web developer's best friends!
 
+## Installation
+You've probably realised I'm going to suggest you use a text editor for this course. Here's a bit of advice, depending on whether you're on Windows, Mac, or Linux.
 
+### Windows
+There are loads of text editors, and I can't list them all here. But you should try out [Notepad++](http://notepad-plus-plus.org/fr/), one of the most popular text editors for Windows—it's a simple program, free to download. I also suggest you set the language to HTML (Language > H > HTML). This lets the software know you're going to type HTML, and colours the code. Coloured code helps you read it more easily.
 
+There are other editors available too, if Notepad++ doesn't much tickle your fancy:
 
+- jEdit
+- PSpad
+- Brackets
+- and you can find many more by searching for "text editor" on the internet
 
-Vous l'aurez compris, je vais vous inviter à utiliser un éditeur de texte dans ce cours. Voici quelques conseils, selon que vous êtes sous Windows, Mac OS X ou Linux.
-Sous Windows
+### Mac
+There are some very nice paid text editors for Mac, but there are also some good free ones you can try:
 
-Il existe une grande quantité d'éditeurs de texte, je ne pourrai pas vous les présenter tous. Néanmoins, je vous invite à vous pencher sur Notepad++, l'un des plus utilisés parmi ceux disponibles pour Windows. Ce logiciel est simple, en français et gratuit.
+- TextMate 2
+- TextWrangler
+- Brackets
 
-Site web de Notepad++
+### Linux
+Text editors are abundant in Linux. Some are installed by default, others can be downloaded via the download center or command line tools like apt-get. Here are some you can try:
 
-Voici à quoi ressemble Notepad++ lorsque vous le lancez (figure suivante).
-Notepad++Notepad++
-
-Je vous conseille de faire la manipulation suivante : allez dans le menu Langage > H > HTML. Cela permettra au logiciel de savoir que l'on va taper du HTML.
-Lorsque vous utiliserez le logiciel, il colorera votre code (figure suivante), ce qui vous permettra de vous repérer plus facilement.
-Coloration sous Notepad++Coloration sous Notepad++
-
-Pour l'instant, ne vous préoccupez pas de savoir ce que signifie tout ce charabia que vous pouvez voir. Je souhaitais simplement vous donner un aperçu des possibilités du logiciel.
-
-Il existe d'autres éditeurs disponibles sous Windows. Si Notepad++ ne vous convient pas, vous pouvez essayer :
-
-    jEdit ;
-
-    PSpad ;
-
-    ConTEXT ;
-
-    … et bien d'autres si vous recherchez « Éditeur de texte » sur le Web.
-
-Sous Mac OS X
-
-Vous pouvez essayer l'un des logiciels suivants :
-
-    jEdit ;
-
-    Smultron ;
-
-    TextWrangler.
-
-Sous Linux
-
-Les éditeurs de texte sont légion sous Linux. Certains d'entre eux sont installés par défaut, d'autres peuvent être téléchargés facilement via le centre de téléchargement (sous Ubuntu notamment) ou au moyen de commandes comme apt-get et aptitude. Voici quelques logiciels que vous pouvez tester :
-
-    gEdit ;
-
-    Kate ;
-
-    vim ;
-
-    Emacs ;
-
-    jEdit.
-
+- Geany
+- gEdit
+- Kate
