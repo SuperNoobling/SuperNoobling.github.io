@@ -6,8 +6,10 @@
         {% else %}
             {{ item.name }}
         {% endif %}
+        
         {% if item.chapters %}
             {% capture parent_path %}{{ parent_path }}{{ item.path }}{% endcapture %}
+            
             {% assign tree = item.chapters %}
             {% include tree.html %}
         {% endif %}

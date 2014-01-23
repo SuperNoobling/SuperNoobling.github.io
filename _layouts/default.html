@@ -13,43 +13,18 @@
         </title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- libraries -->
-        <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/normalize.css">
-        <link href='http://fonts.googleapis.com/css?family=Alegreya+SC:400,400italic,700,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Alegreya:400,400italic,700,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,600' rel='stylesheet' type='text/css'>
-
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/syntax.css">
-
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+        {% include assets.html %}
     </head>
     <body>
 
         <div class="global">
-            <div class="header cf">
-                <div class="sitename">
-                    <a href="/"><span class="deco">&#9753;</span> {{ site.name }}</a>
-                </div>
-                {% if page.book %}
-                    {% for book in site.data.books.library %}
-                        {% if page.book == book.title %}
-                            <div class="bookname"><a href="{{ book.path }}">{{ page.book }}</a></div>
-                        {% endif %}
-                    {% endfor %}
-                {% endif %}
-            </div>
+            {% include header.html %}
 
             <div class="main">
                 {{ content }}
             </div>
 
-            <div class="footer">
-                A project by <a href="http://skymaiden.com/">Hinerangi Courtenay</a> &nbsp;&bull;&nbsp; Texts licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/fr/deed.en">CC BY-NC-SA</a>
-
-            </div>
+            {% include footer.html %}
         </div>
 
     </body>

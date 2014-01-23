@@ -38,8 +38,10 @@ layout: default
                     <div class="posts">
                         
                         {% capture parent_path %}{{ book.path }}{{ chapter.path }}{% endcapture %}
+                        
                         {% assign tree = chapter.chapters %}
                         {% include tree.html %}
+                        
                     </div>
                 {% endif %}
             {% endfor %}
@@ -47,7 +49,6 @@ layout: default
     {% endif %}
     
     
-
     <script>
         document.write('<a class="backlink" href="' + document.referrer + '">&larr; Go Back</a>');
     </script>

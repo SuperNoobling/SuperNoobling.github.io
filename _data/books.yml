@@ -21,6 +21,9 @@ library:
               path: /05-php-intro-conclusion.html
         - name: Prepare your machine
           path: /02
+          chapters:
+            - name: What programs do I need?
+              path: /01-required-software.html
         - name: First steps with PHP
         - name: Include parts of a page
         - name: Variables
