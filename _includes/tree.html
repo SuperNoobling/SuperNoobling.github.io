@@ -8,10 +8,11 @@
         {% endif %}
         
         {% if item.chapters %}
-            {% capture parent_path %}{{ parent_path }}{{ item.path }}{% endcapture %}
-            
-            {% assign tree = item.chapters %}
-            {% include tree.html %}
+            {% assign save_path = parent_path %}
+                {% capture parent_path %}{{ parent_path }}{{ item.path }}{% endcapture %}
+                {% assign tree = item.chapters %}
+                {% include tree.html %}
+            {% assign parent_path = save_path %}
         {% endif %}
     </li>
   {% endfor %}
