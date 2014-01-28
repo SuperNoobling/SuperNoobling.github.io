@@ -19,10 +19,8 @@ layout: default
         <div class="posts">
         {% for book in site.data.books.library %}
             {% if book.title == page.title %}
-            
-                {% assign parent_path = book.path %}
                 {% assign tree = book.chapters %}
-                {% include tree.html %}
+                {% include tree.html param=book.path  %}
             
             {% endif %}
         {% endfor %}
@@ -36,12 +34,12 @@ layout: default
                 {% if book.title == page.book and chapter.name == page.title %}
                     <h2>In this section</h2>
                     <div class="posts">
-                        
+
                         {% capture parent_path %}{{ book.path }}{{ chapter.path }}{% endcapture %}
-                        
+
                         {% assign tree = chapter.chapters %}
-                        {% include tree.html %}
-                        
+                        {% include tree.html param=parent_path %}
+
                     </div>
                 {% endif %}
             {% endfor %}
